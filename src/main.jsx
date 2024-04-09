@@ -8,6 +8,7 @@ import Receipe from './Receipe/Receipe.jsx'
 import Contact from './Contact/Contact.jsx'
 import About from './About/About.jsx'
 import Blog from './Blog/Blog.jsx'
+import Element from './Element/Element.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "blog",
         element: <Blog/>
+      },
+      {
+        path: "element",
+        element: <Element/>
       },
      
      

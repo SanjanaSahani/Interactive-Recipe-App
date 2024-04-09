@@ -1,6 +1,42 @@
-import React from 'react'
+    import React, { useState, useEffect } from 'react';
 
-function About() {
+    function About() {
+        const [recipeCounts, setRecipeCounts] = useState({
+            amazing: 0,
+            burger: 0,
+            meat: 0,
+            dessert: 0
+        });
+    
+        useEffect(() => {
+            const endCounts = {
+                amazing: 1287,
+                burger: 25,
+                meat: 471,
+                dessert: 326
+            };
+    
+            const timer = setInterval(() => {
+                setRecipeCounts(prevCounts => {
+                    const newCounts = { ...prevCounts };
+                    let isComplete = true;
+    
+                    for (const key in prevCounts) {
+                        if (newCounts[key] < endCounts[key]) {
+                            newCounts[key] += 1;
+                            isComplete = false;
+                        }
+                    }
+    
+                    if (isComplete) clearInterval(timer);
+                    
+                    return newCounts;
+                });
+            }, 1);
+    
+            return () => clearInterval(timer);
+        }, []);
+
     return (
         <>
             <div>
@@ -17,22 +53,22 @@ function About() {
             <div className='flex ml-[15%] mr-[15%] gap-36'>
                 <div>
                     <img className='ml-10' src="./images/salad.png" alt="" />
-                    <h1 className='text-center text-5xl font-bold text-green-500 m-4'>1287</h1>
+                    <h1 className='text-center text-5xl font-bold text-green-500 m-4'>{recipeCounts.amazing}</h1>
                     <h1 className='text-xl font-semibold'>Amazing receipies</h1>
                 </div>
                 <div>
                     <img className='ml-12 ' src="./images/hamburger.png" alt="" />
-                    <h1 className='text-center text-5xl font-bold text-green-500 m-4'>25</h1>
+                    <h1 className='text-center text-5xl font-bold text-green-500 m-4'>{recipeCounts.burger}</h1>
                     <h1 className='text-xl font-semibold'>Burger receipies</h1>
                 </div>
                 <div>
                     <img className='ml-10' src="./images/rib.png" alt="" />
-                    <h1 className='text-center text-5xl font-bold text-green-500 m-4'>471</h1>
+                    <h1 className='text-center text-5xl font-bold text-green-500 m-4'>{recipeCounts.meat}</h1>
                     <h1 className='text-xl font-semibold'>Meat receipies</h1>
                 </div>
                 <div>
                     <img className='ml-10' src="./images/pancake.png" alt="" />
-                    <h1 className='text-center text-5xl font-bold text-green-500 m-4'>326</h1>
+                    <h1 className='text-center text-5xl font-bold text-green-500 m-4'>{recipeCounts.dessert}</h1>
                     <h1 className='text-xl font-semibold'>Desert receipieses</h1>
                 </div>
             </div>

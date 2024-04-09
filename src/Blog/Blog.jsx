@@ -5,7 +5,7 @@ function Blog() {
     <>
       <div>
         <img className=' relative w-[92%] h-[190px] ml-[4%] mr-[4%] filter brightness-50' src="./images/breadcumb2.jpg" alt="" />
-        <h1 className='absolute top-[30%] left-[45%] text-white text-4xl font-bold '>Blog</h1>
+        <h1 className='absolute top-[42%] left-[45%] text-white text-4xl font-bold '>Blog</h1>
       </div>
 
       <div className='flex m-20 ml-[15%] mr-[15%] gap-12'>
@@ -19,7 +19,7 @@ function Blog() {
               Read More
             </button>
           </div>
-          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute top-[62%] left-[16%] cursor-pointer'>
+          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute top-[71%] left-[16%] cursor-pointer'>
             <h1 className='font-semibold text-4xl'>05</h1>
             <p>April</p>
             <p>2018</p>
@@ -33,7 +33,7 @@ function Blog() {
               Read More
             </button>
           </div>
-          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute top-[154%] left-[16%] cursor-pointer'>
+          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute top-[163%] left-[16%] cursor-pointer'>
             <h1 className='font-semibold text-4xl'>05</h1>
             <p>April</p>
             <p>2018</p>
@@ -47,7 +47,7 @@ function Blog() {
               Read More
             </button>
           </div>
-          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute top-[246%] left-[16%] cursor-pointer'>
+          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute top-[255%] left-[16%] cursor-pointer'>
             <h1 className='font-semibold text-4xl'>05</h1>
             <p>April</p>
             <p>2018</p>
@@ -79,7 +79,7 @@ function Blog() {
             <h1 className='text-md font-semibold'>Newsletter</h1>
             <div className='w-[320px] h-[400px]'>
               <img className='w-[320px] h-[331px] mt-12' src="./images/bg1.jpg" alt="" />
-              <div className='absolute top-[141%] w-[320px] h-[290px]' style={{ backgroundColor: 'rgba(24, 24, 24, 0.54)' }}>
+              <div className='absolute top-[150%] w-[320px] h-[290px]' style={{ backgroundColor: 'rgba(24, 24, 24, 0.54)' }}>
                 <button className='bg-white ml-4 border-4 border-transparent border-l-green-700 text-slate-600 p-2 w-[285px]'>Subscribe to newsletter</button><br />
                 <button className='bg-green-600 ml-4 mt-6 border-transparent border-4 border-l-green-700 text-white p-2 pl-10 pr-10 w-[285px] cursor-pointer'>Subscribe</button>
                 <p className='text-white text-sm italic p-4 '>Fusce nec ante vitae lacus aliquet vulputate. Donec sceleri sque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
@@ -89,8 +89,8 @@ function Blog() {
               <span className='text-6xl text-green-600 text-center'>,,</span>
               <h1 className='text-2xl p-2 mt-10 italic'>Nothing is better than going home to family and eating good food and relaxing</h1>
               <p className='mt-10'>John Smith</p>
-              <div className='flex text-slate-500 justify-between mt-8 p-2'>
-                <p className='text-green-500'>January 04, 2024</p>
+              <div className='flex text-slate-500 justify-between mt-8 p-2 mb-20'>
+                <p className='text-green-500 '>January 04, 2024</p>
                 <p>2 Comments</p>
               </div>
             </div>
