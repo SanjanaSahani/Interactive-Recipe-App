@@ -42,12 +42,12 @@ function Receipe() {
     <>
       <div>
         <img className=' relative w-[92%] h-[190px] ml-[4%] mr-[4%] filter brightness-50' src="./images/breadcumb3.jpg" alt="" />
-        <h1 className='absolute top-[40%] left-[45%] text-white text-4xl font-bold '>Receipe</h1>
+        <h1 className='absolute top-[40%] md:left-[45%] left-[30%] text-white text-4xl font-bold '>Receipe</h1>
       </div>
 
-      <div className='flex justify-center items-center gap-16 m-20'>
-        <div className=' bg-slate-100 pt-4 p-4 pr-6'>
-          <select className=' bg-slate-100 text-center ' name="select1" id="select1">
+      <div className=' flex md:flex-nowrap flex-wrap justify-center items-center md:gap-16 gap-3 md:m-20 m-[25px] md:mt-none mt-20 md:mb-none mb-20'>
+        <div className='w-full md:w-auto bg-slate-100 pt-4 p-4 pr-6'>
+          <select className=' bg-slate-100 text-center' name="select1" id="select1">
             <option value="1">All Receipies Categories</option>
             <option value="1">All Receipies Categories 2</option>
             <option value="1">All Receipies Categories 3</option>
@@ -55,7 +55,7 @@ function Receipe() {
             <option value="1">All Receipies Categories 5</option>
           </select>
         </div>
-        <div className=' bg-slate-100 pt-4 p-4 pr-6'>
+        <div className='w-full md:w-auto bg-slate-100 pt-4 p-4 pr-6'>
           <select className=' bg-slate-100 text-center' name="select2" id="select2">
             <option value="2">All Receipies Categories</option>
             <option value="2">All Receipies Categories 2</option>
@@ -64,7 +64,7 @@ function Receipe() {
             <option value="2">All Receipies Categories 5</option>
           </select>
         </div>
-        <input className=' bg-slate-100 text-center p-4 ppl-8 pr-10' type="search" name="Search" id="search" placeholder='Search Receipe' />
+        <input className='w-full md:w-auto bg-slate-100 text-center p-4 ppl-8 pr-10' type="search" name="Search" id="search" placeholder='Search Receipe' />
         <button className='bg-green-600 border-l-2 border-green-800 p-4 pl-12 pr-12 text-white hover:bg-green-700'>
           Search
         </button>
@@ -74,13 +74,13 @@ function Receipe() {
       <div className='relative  ml-[15%] mr-[15%]'>
         {/* for buttons  */}
         <button
-          className='absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-xl font-semibold z-10 m-8'
+          className='absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-xl font-semibold z-10 m-8 md:block hidden'
           onClick={handlePrev}
         >
           Prev <hr className='bg-green-600 h-1' />
         </button>
         <button
-          className='absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-xl font-semibold z-10 m-8'
+          className='absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-xl font-semibold z-10 m-8 md:block hidden'
           onClick={handleNext}
         >
           Next <hr className='bg-green-600 h-1' />
@@ -107,7 +107,7 @@ function Receipe() {
         </div>
       </div>
 
-      <div className='flex justify-center items-center m-12 gap-96' >
+      <div className='flex flex-col md:flex-row justify-center items-center md:items-start m-4 md:m-12 md:mx-[15%] gap-4 md:gap-44 md:my-none my-12'>
         <div>
           <p className='text-slate-500'>April 05, 2018</p>
           <h1 className='text-4xl text-slate-700 font-semibold'>Vegetarian cheese salad</h1>
@@ -117,24 +117,25 @@ function Receipe() {
             <h1>Yields: 8 Servings</h1>
           </div>
         </div>
-        <div>
-          <div className='text-l pl-24 pb-8'>
+        <div className='flex items-center'>
+          <div className=' flex text-l pl-none md:pl-12 pb-8'>
             <FontAwesomeIcon className='text-yellow-400 p-2' icon={faStar} />
             <FontAwesomeIcon className='text-yellow-400 p-2' icon={faStar} />
             <FontAwesomeIcon className='text-yellow-400 p-2' icon={faStar} />
             <FontAwesomeIcon className='text-yellow-400 p-2' icon={faStar} />
             <FontAwesomeIcon className='text-yellow-200 p-2' icon={faStar} />
           </div>
-          <div className='pl-20'>
-            <button className='bg-green-600 border-l-2  border-green-800 p-6 pl-12 pr-12 text-white hover:bg-green-700'>
+          <div className='pl-4 md:pl-20'>
+            <button className='bg-green-600 border-l-2 border-green-800 p-4 md:p-6 pl-8 md:pl-12 pr-8 md:pr-12 text-white hover:bg-green-700'>
               For Beginner
             </button>
           </div>
         </div>
       </div>
 
-      <div className='flex justify-center items-center'>
-        <div className='w-[45%] ml-18'>
+
+      <div className='md:flex justify-center items-center'>
+        <div className='md:w-[45%] w-auto md:ml-18 ml-4'>
           <div className='flex'>
             <h1 className='text-2xl font-semibold text-slate-500'>01.</h1>
             <p className='text-slate-400 ml-4 mb-16'>
@@ -157,7 +158,7 @@ function Receipe() {
           </div>
 
         </div>
-        <div className='mt-[-89px] w-[25%]'>
+        <div className='md:mt-[-89px] mt-none md:w-[25%] w-auto'>
           <h1 className='text-xl font-semibold text-slate-700 ml-8'>Ingredients</h1>
           <div>
             <div className='flex gap-4 m-8 font-semibold'>
@@ -199,17 +200,17 @@ function Receipe() {
       <div className='ml-[15%] mr-[15%]'>
         <h1 className='text-3xl font-semibold mt-4 mb-12'>Leave a comment</h1>
         <form action="#" className=' '>
-         <div className='flex flex-wrap gap-10 mb-4'>
-         <input className='w-[510px] bg-slate-200 p-4  italic text-xs' type="text" name="text" id="text" placeholder='Name' />
-          <input className='w-[510px] bg-slate-200 p-4  italic text-xs' type="email" name="email" id="email" placeholder='E-mail' />
-         </div>
-          <input className='w-[1060px] bg-slate-200 p-4 mb-4 italic text-xs' type="text" name="subject" id="subject" placeholder='Subject' /> <br />
-          <input className='w-[1060px] h-[215px] bg-slate-200 p-4 border-l-green-600 border-4 border-transparent mb-10 italic text-xs' type="text" name="message" id="message" placeholder='Message' /> <br />
+          <div className='flex flex-wrap gap-10 mb-4'>
+            <input className='w-[510px] bg-slate-200 p-4  italic text-xs' type="text" name="text" id="text" placeholder='Name' />
+            <input className='w-[510px] bg-slate-200 p-4  italic text-xs' type="email" name="email" id="email" placeholder='E-mail' />
+          </div>
+          <input className='md:w-[1060px] w-full bg-slate-200 p-4 mb-4 italic text-xs' type="text" name="subject" id="subject" placeholder='Subject' /> <br />
+          <input className='md:w-[1060px] w-full h-[215px] bg-slate-200 p-4 border-l-green-600 border-4 border-transparent mb-10 italic text-xs' type="text" name="message" id="message" placeholder='Message' /> <br />
           <button className='bg-green-500 border-l-2  border-green-800 p-6 pl-12 pr-12 mb-20 text-white hover:bg-green-700'>
-              Post Comments
-            </button>
+            Post Comments
+          </button>
         </form>
-      
+
       </div>
     </>
   )

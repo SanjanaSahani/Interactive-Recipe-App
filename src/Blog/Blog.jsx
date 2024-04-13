@@ -8,10 +8,10 @@ function Blog() {
         <h1 className='absolute top-[42%] left-[45%] text-white text-4xl font-bold '>Blog</h1>
       </div>
 
-      <div className='flex m-20 ml-[15%] mr-[15%] gap-12'>
+      <div className='md:flex md:m-20 md:ml-[15%] md:mr-[15%] gap-12 m-4'>
         <div>
-          <div className='w-[680px]'>
-            <img className='w-[680px] mb-10' src="./images/1.jpg" alt="" />
+          <div className='md:w-[680px] w-[310px]'>
+            <img className='md:w-[680px] w-[310px] mb-10' src="./images/1.jpg" alt="" />
             <h1 className='text-2xl text-slate-700 font-semibold hover:text-green-700'>How to find amazing restaurants in your city</h1>
             <p className='text-slate-400 text-sm mb-8 '>by <span className='underline hover:text-green-700'> Maria Williams</span> in <span className='underline hover:text-green-700'>Restaurants</span></p>
             <p className='text-slate-500 mb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -19,13 +19,13 @@ function Blog() {
               Read More
             </button>
           </div>
-          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute top-[71%] left-[16%] cursor-pointer'>
+          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute md:top-[71%] top-[60%] md:left-[16%] left-[6%] cursor-pointer'>
             <h1 className='font-semibold text-4xl'>05</h1>
             <p>April</p>
             <p>2018</p>
           </div>
-          <div className='w-[680px]'>
-            <img className='w-[680px] mb-10' src="./images/2.jpg" alt="" />
+          <div className='md:w-[680px] w-[310px]'>
+            <img className='md:w-[680px] w-[310px] mb-10' src="./images/2.jpg" alt="" />
             <h1 className='text-2xl text-slate-700 font-semibold hover:text-green-700'>How to find amazing restaurants in your city</h1>
             <p className='text-slate-400 text-sm mb-8 '>by <span className='underline hover:text-green-700'> Maria Williams</span> in <span className='underline hover:text-green-700'>Restaurants</span></p>
             <p className='text-slate-500 mb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -33,13 +33,13 @@ function Blog() {
               Read More
             </button>
           </div>
-          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute top-[163%] left-[16%] cursor-pointer'>
+          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute top-[161%] md:left-[16%] left-[6%] cursor-pointer'>
             <h1 className='font-semibold text-4xl'>05</h1>
             <p>April</p>
             <p>2018</p>
           </div>
-          <div className='w-[680px]'>
-            <img className='w-[680px] mb-10' src="./images/3.jpg" alt="" />
+          <div className='md:w-[680px] w-[310px]'>
+            <img className='md:w-[680px] w-[310px] mb-10' src="./images/3.jpg" alt="" />
             <h1 className='text-2xl text-slate-700 font-semibold hover:text-green-700'>How to find amazing restaurants in your city</h1>
             <p className='text-slate-400 text-sm mb-8 '>by <span className='underline hover:text-green-700'> Maria Williams</span> in <span className='underline hover:text-green-700'>Restaurants</span></p>
             <p className='text-slate-500 mb-10'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -47,7 +47,7 @@ function Blog() {
               Read More
             </button>
           </div>
-          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute top-[255%] left-[16%] cursor-pointer'>
+          <div className='bg-green-600 w-[80px] text-white p-2 hover:bg-green-700 absolute md:top-[255%] top-[262%]  md:left-[16%] left-[6%] cursor-pointer'>
             <h1 className='font-semibold text-4xl'>05</h1>
             <p>April</p>
             <p>2018</p>
@@ -79,7 +79,7 @@ function Blog() {
             <h1 className='text-md font-semibold'>Newsletter</h1>
             <div className='w-[320px] h-[400px]'>
               <img className='w-[320px] h-[331px] mt-12' src="./images/bg1.jpg" alt="" />
-              <div className='absolute top-[150%] w-[320px] h-[290px]' style={{ backgroundColor: 'rgba(24, 24, 24, 0.54)' }}>
+              <div className='absolute md:top-[147.5%] top-[441%] w-[320px] h-[290px]' style={{ backgroundColor: 'rgba(24, 24, 24, 0.54)' }}>
                 <button className='bg-white ml-4 border-4 border-transparent border-l-green-700 text-slate-600 p-2 w-[285px]'>Subscribe to newsletter</button><br />
                 <button className='bg-green-600 ml-4 mt-6 border-transparent border-4 border-l-green-700 text-white p-2 pl-10 pr-10 w-[285px] cursor-pointer'>Subscribe</button>
                 <p className='text-white text-sm italic p-4 '>Fusce nec ante vitae lacus aliquet vulputate. Donec sceleri sque accumsan molestie. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>

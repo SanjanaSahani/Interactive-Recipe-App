@@ -44,13 +44,13 @@ const ImageCarousel = () => {
 
             {/* for buttons  */}
             <button
-                className='absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-xl font-semibold z-10 m-8'
+                className='absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-xl font-semibold z-10 m-8 md:block hidden'
                 onClick={handlePrev}
             >
                 Prev <hr className='bg-green-600 h-1' />
             </button>
             <button
-                className='absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-xl font-semibold z-10 m-8'
+                className='absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-xl font-semibold z-10 m-8 md:block hidden'
                 onClick={handleNext}
             >
                 Next <hr className='bg-green-600 h-1' />
@@ -58,7 +58,7 @@ const ImageCarousel = () => {
 
             {/* for Paragraph  */}
 
-            {showpara && (<div className=' w-[530px] absolute top-[36%] border-l-4 border-green-800 left-[32%] z-10 text-white p-10 opacity-1 transform -translate-x-1/2'
+            {showpara && (<div className='md:w-[530px] w-[30%] absolute md:top-[36%] top-[15%] border-l-4 border-green-800 md:left-[32%] left-[17%] z-10 text-white p-10 opacity-1 transform -translate-x-1/2'
                 style={{ backgroundColor: 'rgba(24, 24, 24, 0.54)' }}>
                 <h1 className='text-4xl mb-6'>Delicios Homemade Burger</h1>
                 <p className='mb-8 text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni eos iste numquam exercitationem odio asperiores laudantium dolorum quibusdam, adipisci reprehenderit sint facere quo?</p>
@@ -78,7 +78,7 @@ const ImageCarousel = () => {
                     {images.map((image, index) => (
                         <img
                             key={index}
-                            className='transition-transform duration-500 transform'
+                            className='md:w-full  transition-transform duration-500 transform  '
                             src={image}
                             alt={`Image ${index + 1}`}
                         />
