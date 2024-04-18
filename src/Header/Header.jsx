@@ -144,7 +144,7 @@ function Header() {
             CONTACT
           </NavLink>
         </ul>
-        <div className="search-btn text-slate-400 p-6  hover:text-green-600 hidden md:block">
+        <div className="search-btn text-slate-400 p-6 cursor-pointer hover:text-green-600 hidden md:block">
           <FontAwesomeIcon onClick={search} icon={faMagnifyingGlass} />
         </div>
       </div>
